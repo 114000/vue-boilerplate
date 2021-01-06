@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import VueCompositionApi from '@vue/composition-api'
+import '@/style/index.css'
 
 Vue.config.productionTip = false
 

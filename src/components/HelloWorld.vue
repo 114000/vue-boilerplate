@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }} + {{ state.count }}</h1>
-    
     <button @click="handleClick">log message</button>
     <br>
   </div>
@@ -24,7 +23,7 @@ export default Vue.extend({
 
     function handleClick () {
       state.count++
-      console.log('self', self)
+      // console.log('self', self)
     }
     return {
       handleClick,

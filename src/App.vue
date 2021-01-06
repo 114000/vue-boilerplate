@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    <p class="bg-gray-50 text-red-400">xxxxxxxx</p>
   </div>
 </template>
 
@@ -15,18 +16,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #cd164e;
-}
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    & .router-link-exact-active {
-      color: #42b983;
-    }
+  p {
+    color: green;
   }
 }
+
 </style>

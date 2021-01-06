@@ -8,3 +8,4 @@ vue 项目模板
 - [x] vuex
 - [x] @vue/composition-api
 - [x] postcss
+- [x] tailwindcss
