@@ -1,6 +1,6 @@
 # fe-vue-boilerplate
 
-vue 项目模板 
+checkout branch `master` for Vue@3
 
 - [x] typescript
 - [x] vue2
