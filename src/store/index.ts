@@ -1,15 +1,21 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createGlobalState } from '@vueuse/core'
+import { reactive } from 'vue'
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+// simple
+export const useStore = createGlobalState(() => {
+  return reactive({
+    count: 0
+  })
 })
+
+export function increase () {
+  const store = useStore()
+
+  store.count += 1
+}
+
+export function decrease () {
+  const store = useStore()
+
+  store.count -= 1
+}

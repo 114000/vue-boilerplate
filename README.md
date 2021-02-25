@@ -1,11 +1,10 @@
 # fe-vue-boilerplate
 
-vue 项目模板 
+checkout branch `vue2` for Vue@2
 
-- [x] typescript
-- [x] vue2
-- [x] vue-router
-- [x] vuex
-- [x] @vue/composition-api
-- [x] postcss
-- [x] tailwindcss
+[x] TypeScript
+[x] vue@^3
+[x] vue-router@^4
+[x] @vueuse/core
+[x] postcss@^9
+[x] tailwindcss@^2

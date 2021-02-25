@@ -1,25 +1,30 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-    <p class="bg-gray-50 text-red-400">xxxxxxxx</p>
-  </div>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <navigator :items="navItems" />
+  <p>count: {{ store.count }}</p>
+  <router-view></router-view>
+
 </template>
 
-<style lang="postcss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #cd164e;
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { Navigator } from './components'
+import { useStore } from './store'
+export default defineComponent({
+  name: 'App',
+  components: { Navigator },
+  setup () {
 
-  p {
-    color: green;
+    return {
+      store: useStore(),
+      navItems: [
+        { name: 'Go Home', value: '/' },
+        { name: 'Go About', value: '/about' },
+      ]
+    }
   }
-}
+})
+</script>
 
+<style>
 </style>
